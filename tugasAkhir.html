@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jiha Beads</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-nav .nav-link:hover {
+            color: #ff5733 !important;
+        }
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 0;
+        }
+        .form-section, .howto-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        .btn-warning:hover {
+            background-color: #ff9800;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light shadow">
+        <div class="container">
+            <a class="navbar-brand text-danger fw-bold" href="#">✨Jiha Beads✨</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-danger" href="#howtoorder">How to Order</a>
+                    <li class="nav-item"><a class="nav-link text-danger" href="#contact">Contact</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container hero-section">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <img src="gelang1.jpg" class="img-fluid rounded" alt="Jiha Beads">
+            </div>
+            <div class="col-lg-6 text-center">
+                <h1 class="text-danger">✨Jiha Beads✨</h1>
+                <h4 class="text-muted">Chic, Solid, and Vibrant</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- How to Order Section -->
+    <div id="howtoorder" class="container howto-section">
+        <h3 class="text-center text-danger">How to Order</h3>
+        
+            1. Pilih Desain Gelang.<br>
+            2. Tentukan Ukuran.<br>
+            3. Tambahkan ke Keranjang.<br>
+            4. Isi Data Pengiriman.<br>
+            5. Pilih Metode Pembayaran<br>
+            6. Konfirmasi Pembayaran<br>
+            7. Tunggu Konfirmasi dan Pengiriman<br>
+            8. Nikmati Gelang Serutmu!<br>  
+        
+    </div>
+
+    <!-- Contact Form Section -->
+    <div id="contact" class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="form-section">
+                    <h3 class="text-center text-danger">Get in Touch</h3>
+                    <form action="form.php" method="POST">
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Your Name</label>
+                          <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Your Email</label>
+                          <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="pesan" class="form-label">Message</label>
+                          <textarea class="form-control" id="pesan" name="pesan" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning">Send!</button>
+                      </form>                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2025 Jiha Beads. All Rights Reserved.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
